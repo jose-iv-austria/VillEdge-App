@@ -1,0 +1,35 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.VillEdgeResident" parent="Base.Theme.VillEdgeResident">
+        <!-- Transparent system bars for edge-to-edge. -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+    </style>
+
+    <!-- Splash Screen Theme for API 23+ -->
+    <style name="Theme.SplashScreen" parent="Base.Theme.VillEdgeResident">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+
+    <style name="CustomEditText">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColorHint">#888888</item>
+    </style>
+    <style name="CustomButton">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">#FFFFFF</item> <!-- White text -->
+        <item name="android:textStyle">bold</item> <!-- Optional for better visibility -->
+        <item name="android:padding">12dp</item>
+    </style>
+    <style name="CustomSpinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/edittext_bg</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColorHint">#888888</item>
+        <item name="android:textColor">#0A3832</item>
+    </style>
+
+
+
+
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".MainActivity">
+
+    <!-- Two texts beside each other with 64px margin -->
+    <!-- Adjust margins to control spacing -->
+
+    <!-- One text with 32px margin -->
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginStart="400px"
+        android:text="Hello, "
+        android:textColor="#FFFFFF"
+        android:textSize="35dp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintEnd_toStartOf="@id/userLastname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userLastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="400px"
+        android:textColor="#BBD409"
+        android:textSize="35dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Text 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/text1"
+        app:layout_constraintTop_toTopOf="@id/text1" />
+
+    <TextView
+        android:id="@+id/userAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:fontFamily="@font/poppins"
+        android:text="Single Text"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1" /> <!-- Adjust margins to control spacing -->
+
+    <!-- Three texts beside each other with 24px margin -->
+    <!-- Adjust margins to control spacing -->
+
+    <!-- Adjust margins to control spacing -->
+
+    <!-- First button (3/4 width) -->
+    <!-- Adjust margins to control spacing -->
+
+    <!-- Second button (3/4 width of screen) -->
+    <!-- Adjust margins to control spacing -->
+
+    <!-- Third button (4/5 width of screen) -->
+
+    <TextView
+        android:id="@+id/humidityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Text 4"
+        android:textColor="#143C6D"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userAddress" />
+
+    <TextView
+        android:id="@+id/temperatureText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="-580px"
+        android:textColor="#143C6D"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Text 5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userAddress" />
+
+    <TextView
+        android:id="@+id/solarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="-600px"
+        android:textColor="#143C6D"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Text 3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userAddress" />
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:src="@drawable/remote_button"
+        android:scaleType="centerCrop"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="300dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="40dp"
+        android:text="Button 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/temperatureText"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:src="@drawable/visitor_button"
+        android:scaleType="centerCrop"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="300dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="24dp"
+        android:text="Button 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button1"
+        app:layout_constraintWidth_percent="0.75" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_marginTop="120dp"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#455900"
+        android:textSize="18dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:layout_constraintWidth_percent="0.8" /> <!-- Adjust margins to control spacing -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

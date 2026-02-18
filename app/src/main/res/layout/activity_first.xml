@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smartgateremote_bg"
+    tools:context=".FirstActivity">
+
+    <!-- Button at the top-left corner -->
+
+    <!-- Button centered with 1/3 screen width and 1/2 screen height -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/backbutton"
+        android:scaleType="centerCrop"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="28dp"/>
+
+
+    <ImageButton
+        android:id="@+id/gate_button"
+        android:src="@drawable/open_button"
+        android:scaleType="centerCrop"
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="320dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintWidth_percent="0.33"
+        app:layout_constraintHeight_percent="0.50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

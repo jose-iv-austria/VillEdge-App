@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/logging_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".LoginActivity">
+
+
+
+    <EditText
+        android:id="@+id/serialNumber"
+        style="@style/CustomEditText"
+        android:textColor="#0A3832"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Identification"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintWidth_percent="0.857"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/CustomEditText"
+        android:textColor="#0A3832"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintWidth_percent="0.857"
+        app:layout_constraintTop_toBottomOf="@id/serialNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#455900"
+        android:textSize="18dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Login"
+        app:layout_constraintWidth_percent="0.857"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "722168393453",
+    "firebase_url": "https://villedge-75589-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "villedge-75589",
+    "storage_bucket": "villedge-75589.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722168393453:android:36bd010b76ae0622dde6e4",
+        "android_client_info": {
+          "package_name": "com.example.villedgeresident"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZAzSEC8DLYAuxkMhVDeZyK2Dfx3XY2Zg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
